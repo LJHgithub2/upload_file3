@@ -1,0 +1,199 @@
+<!DOCTYPE HTML>
+<html lang="kr">
+	<head>
+		<title>주문하기</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+	</head>
+
+	
+	<body class="is-preload">
+		<div id="page-wrapper">
+			<header id="header" class="alts">
+				<h1><a href="../index.html">애도</a> 주문하기&nbsp;&nbsp;&nbsp;&nbsp;<span class="user_info" id="user_info" style="left:5em;"></span></h1>
+					<nav id="nav">
+						<ul>
+							<li><a href="../index.html">홈</a></li>
+							<li>
+								<a href="#" class="icon solid fa-angle-down">메뉴</a>
+								<ul>
+									<li><a href=""><div onclick="nav_click('list.html');">부고목록</div></a></li>
+									<li><a href=""><div onclick="nav_click('upload.html');">부고작성</div></a></li>
+									<li><a href=""><div onclick="nav_click('order.html');">화환주문</div></a></li>
+									<li><a href="../notice.html">공지사항</a></li>	
+
+								</ul>
+							</li>
+							<li><a href="../login.html" class="button" id="login_btn">로그인</a></li>
+							<li><a class="button" id="logout_btn"><div id="logout">로그아웃</div></a></li>
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Main -->
+				<section id="main" class="container medium">
+					<header>
+					</header>
+
+					<div class="box">
+						<header id="flower_info">
+							<h3> <div id='flower_name'>오브제, 장구 1단</div></h3></br>
+						</header>
+
+						<header id = "flower_pays">
+							<h3><div id='flower_pay'>85,000 원</div></h3>
+						</header>
+					</div>
+
+
+					<div class="box">
+						<header>
+							<h3>주문 정보 <div id="current_date"></div></h3>
+							
+						</header>
+						<form method="post" action="#">
+							<div class="row gtr-50 gtr-uniform">
+								<div class="col-6 col-12-mobilep">
+									<input type="text" name="send_name" id="send_name" value="" placeholder="보내시는분 성함" />
+								</div>
+								<div class="col-6 col-12-mobilep">
+									<input type="text" name="send_phone" id="send_phone" value="" placeholder="보내시는분연락처" />
+								</div>
+							</div>
+						</form>
+
+						<form method="post" action="#">
+							<div class="row gtr-50 gtr-uniform">
+								<div class="col-6 col-12-mobilep">
+									<input type="text" name="recive_name" id="recive_name" value="" placeholder="받으시는분 성함" />
+								</div>
+
+								<div class="col-6 col-12-mobilep">
+									<input type="text" name="recive_phone" id="recive_phone" value="" placeholder="받으시는분 연락처" />
+								</div>
+							</div>
+						</form>
+					</div>
+
+					<div class="box">
+						<header>
+							<h3>배송지</h3>
+						</header>
+						<form method="post" action="#">
+							<div class="row gtr-50 gtr-uniform">
+
+								<div class="place-1 address">
+									<input type="text" id="funeral_name" name="funeral_name" placeholder="장례식장 이름" class="read_only" readonly></td>
+								</div>
+
+								<div class="place-2 address">
+									<select id="funeral_name_select" required>
+										<option value="">장례식장 선택</option>
+										<option>구례산림 조합 장례식장</option>
+										<option>구례 병원 장례식장</option>
+										<option>구례 효사랑 요양병원 장례식장</option>
+										<option>새미소 요양병원 장례식장</option>
+									</select>
+								</div>
+
+								<div class="place-1">
+									<input type="text" id="mortuary" name="mortuary" placeholder="빈소를 입력해주세요">
+								</div>
+							</div>
+						</form>
+					</div>
+
+					<div class="box">
+						<header>
+							<h3>화환 리본 문구</h3>
+						</header>
+						<form method="post" action="#">
+							<div class="row gtr-50 gtr-uniform">
+
+								<div class="place-1 address">
+									<input type="text" id="ribbon_text" name="ribbon_text" placeholder="리본문구를 입력해주세요">
+								</div>
+
+								<div class="place-2 address">
+									<select id="ribbon_text_select">
+										<option value="">리본 문구를 입력해주세요</option>
+										<option>삼가 故人의 冥福을 빕니다</option>
+										<option>삼가 고인의 명복을 빕니다</option>
+										<option>謹 弔</option>
+										<option>極樂往生發源</option>
+										<option>극락왕생발원</option>
+										<option>천국에서 편히 쉬소서</option>
+										<option>하나님의 위로가 함께 하시길 빕니다</option>
+									</select>
+								</div>
+
+								<div class="place-1">
+									<input type="text" id="company_name" name="company_name" placeholder="회사명/모임명을 입력해주세요">
+								</div>
+								<div class="check_text" id="check_text">
+
+								</div>
+
+								<div class="col-6 col-12-narrower">
+									<input type="checkbox" id="copy" name="copy">
+									<label for="copy"><a href="../guide.html">상품정보 고객 동의</a></label>
+								</div>
+							</div>
+						</form>
+						<input type="login_button" id="login_button" value="주문 하기" class="fit" onclick="requestPay()" />
+
+					</div>
+
+				</section>
+
+				
+
+			<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<div module="Layout_footer">
+						<div class="info">
+							<div class="info__address">
+								<span>법인명(상호) : 청란플라워 </span> <br/>
+								<span>대표자(성명) : 박인호</span> <br/>
+								<span>사업자 등록번호 안내 : 448-92-01531</span><br/>
+								<span>통신판매업 신고: 제 2022-전남 구례-9호</span><br/>
+								 <span class="{$cpo_email|display}">개인정보보호책임자 : 청란플라워</a></span><br/>
+							</div>
+						</div>
+						<ul class="util">
+							<ul class="copyright">
+								<li><a href="../index.html">홈</a></li>
+								<li><a href="../company.html">회사소개</a></li>
+								<li><a href="../privacy.html">개인정보취급방침</a></li>
+								<li><a href="../guide.html">이용안내</a></li>
+							</ul>
+						</ul>
+					</div>
+				</div>
+			</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script type="text/javascript" src="https://cdn.iamport.kr/js/iamport.payment-1.1.5.js"></script>			
+			<script src="../assets/js/jquery.dropotron.min.js"></script>
+			<script src="../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+			<script src="../assets/js/order/ordercheck.js"></script>
+			<script src="../assets/js/order/iamport.js"></script>
+
+			<script>
+				date = new Date();
+				year = date.getFullYear();
+				month = date.getMonth() + 1;
+				day = date.getDate();
+				document.getElementById("current_date").innerHTML = year + "년" + " "+ month + "월" + " " + day+"일";
+			</script>
+	</body>
+</html>

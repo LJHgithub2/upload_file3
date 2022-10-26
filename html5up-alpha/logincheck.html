@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html lang="kr">
+	<head>
+		<title>본인인증</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/login/login.css" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+			<!-- Header -->
+			<header id="header" class="alts">
+				<h1><a href="index.html">애도</a> 본인인증</h1>
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">홈</a></li>
+							<li>
+								<a href="#" class="icon solid fa-angle-down">메뉴</a>
+								<ul>
+									<li><a href="list.html">부고목록</a></li>
+									<li><a href="upload.html">부고작성</a></li>
+									<li><a href="order.html">화환주문</a></1li>
+									<li><a href="notice.html">공지사항</a></li>
+
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</header>
+				
+				<section id="main" class="container medium">
+				<header>
+					<h3>본인인증</h3>
+					<p>전송된 인증번호 4자리를 입력해 주세요.</p>
+				</header>
+				<div class="box">
+					<form method="post" action="#">
+						<div class="row gtr-50 gtr-uniform">
+							<div class="col-8 col-12-mobilep">
+								<div class="phone_box">
+								<input type="text" name="phone" class="auth_number" id="auth_number" placeholder="4자리 인증번호를 입력해 주세요" />
+								</div>
+							</div>
+
+							<div class="col-4 col-12-mobilep">
+								<div class="submit" onclick="submit();">
+									<input type="login_button" id="login_button" value="확인" class="fit" />
+								</div>
+							</div>
+
+							<tr height="15%">
+								<td class="one_td title_td" colspan="3">
+									<div><span id="time">남은시간 3:00</span></div>
+								</td>
+							</tr>
+						</div><br/>
+						<div class="col-6 col-12-narrower">
+							<input type="checkbox" id="terms" name="terms">
+							<label for="terms"> 이용약관 동의, 개인정보이용 동의, 제3자정보제공 동의, 위치 정보이용 동의의 모든 약관을 확인하였으며, 충분히 숙지하였고 동의합니다.</label>
+						</div>
+					</form>
+				</div>
+				</section>
+
+				
+
+				<section id="main">
+
+				</section>
+
+				<footer id="footer">
+					<div class="inner">
+						<div module="Layout_footer">
+							<div class="info">
+								<div class="info__address">
+									<span>법인명(상호) : 청란플라워 </span> <br/>
+									<span>대표자(성명) : 박인호</span> <br/>
+									<span>사업자 등록번호 안내 : 448-92-01531</span><br/>
+									<span>통신판매업 신고: 제 2022-전남 구례-9호</span><br/>
+									 <span class="{$cpo_email|display}">개인정보보호책임자 : 청란플라워</a></span><br/>
+								</div>
+							</div>
+							<ul class="util">
+								<ul class="copyright">
+									<li><a href="index.html">홈</a></li>
+									<li><a href="company.html">회사소개</a></li>
+									<li><a href="privacy.html">개인정보취급방침</a></li>
+									<li><a href="guide.html">이용안내</a></li>
+								</ul>
+							</ul>
+						</div>
+					</div>
+				</footer>
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script type="text/javascript" src="assets/js/login/logincheck.js" > </script>
+			<script type="text/javascript" src="assets/js/login/jquery-1.10.1.min.js"> </script>
+			<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	</body>
+</html>

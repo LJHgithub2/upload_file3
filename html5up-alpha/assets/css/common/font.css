@@ -1,0 +1,28 @@
+@font-face {
+    font-weight: 500;
+    font-family: 'Noto-Sans-CJK-KR';
+    font-style: normal;
+    src: url(/fonts/Noto-Sans-CJK-KR-Regular.woff2) format("woff2"),url(/fonts/Noto-Sans-CJK-KR-Regular.woff) format("woff");
+    font-display: swap;
+}
+@font-face {
+    font-weight: 700;
+    font-family: 'Noto-Sans-CJK-KR';
+    font-style: normal;
+    src: url(/fonts/Noto-Sans-CJK-KR-Bold.woff2) format("woff2"),url(/fonts/Noto-Sans-CJK-KR-Bold.woff) format("woff");
+    font-display: swap;
+}
+@font-face {
+    font-weight: 500;
+    font-family: 'Segoe-UI';
+    font-style: normal;
+    src: url(/fonts/Segoe-UI-Regular.woff2) format("woff2"),url(/fonts/Segoe-UI-Regular.woff) format("woff");
+    font-display: swap;
+}
+@font-face {
+    font-weight: 500;
+    font-family: 'Segoe-UI';
+    font-style: normal;
+    src: url(/fonts/Segoe-UI-Bold.woff2) format("woff2"),url(/fonts/Segoe-UI-Bold.woff) format("woff");
+    font-display: swap;
+}

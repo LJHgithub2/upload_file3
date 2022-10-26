@@ -1,0 +1,241 @@
+<!DOCTYPE HTML>
+<html lang="kr">
+	<head>
+		<title>부고작성</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+			<header id="header" class="alts">
+				<h1><a href="index.html">애도</a> 부고작성&nbsp;&nbsp;&nbsp;&nbsp;<span class="user_info" id="user_info" style="left:5em;"></span></h1>
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">홈</a></li>
+						<li>
+							<a href="#" class="icon solid fa-angle-down">메뉴</a>
+							<ul>
+								<li><a href=""><div onclick="nav_click('list.html');">부고목록</div></a></li>
+								<li><a href=""><div onclick="nav_click('upload.html');">부고작성</div></a></li>
+								<li><a href=""><div onclick="nav_click('order.html');">화환주문</div></a></li>
+								<li><a href="notice.html">공지사항</a></li>	
+							</ul>
+						</li>
+						<li><a href="login.html" class="button" id="login_btn">로그인</a></li>
+						<li><a class="button" id="logout_btn"><div id="logout">로그아웃</div></a></li>
+					</ul>
+				</nav>
+			</header>
+			<!-- Header -->
+
+			<form id="form1" onsubmit="return test();" encType="multipart/form-data">
+				<input type="hidden" id="created" name="created" value="2022-10-08">
+				<input type="hidden" id="Accesstoken" name="Accesstoken" value="">
+
+
+				<!-- Main -->
+				<section id="main" class="container medium">
+					<header>
+						<h2>부고작성</h2>
+						<p>*표시는 필수로 입력해야 합니다.</p>
+					</header>
+					<div class="box">
+						<header>
+							<h3>고인 정보</h3>
+						</header>
+							<div class="row gtr-50 gtr-uniform">
+
+								<div class="place-1 address">
+									<input type="text" id="place_name" name="place_name" placeholder="* 장례식장 이름" class="read_only" readonly></td>
+								</div>
+
+								<div class="place-2 address">
+									<select id="funeral_name_select" required>
+										<option value="">* 장례식장 선택</option>
+										<option>구례산 조합 장례식장</option>
+										<option>구례 병원 장례식장</option>
+										<option>구례 효사랑 요양병원 장례식장</option>
+										<option>새미소 요양병원 장례식장</option>
+									</select>
+								</div>
+
+								<div class="upload-1">
+									<input type="text" id="deceasedName" name="deceasedName" placeholder="* 고인 명">
+								</div>
+
+								<div class="upload-2">
+									<input type="text" maxlength='3' id="deceasedAge" name="deceasedAge" placeholder="* 나이">
+								</div>
+
+								<div class="upload-2">	
+									<input type="text" id="place_number" name="place_number" placeholder="장례식 호실">
+								</select>
+							</div>
+						
+						</div>
+
+							<div class="file_btn">
+								<label for="input-file">
+									<input type="file" id="input-file" name="img" accept="image/*" class="file">
+								</label>
+							
+							</div>
+							
+					</div>
+
+					<div class="box">
+						<header>
+							<h3>장례 정보</h3>
+						</header>
+							<div class="row gtr-50 gtr-uniform">
+								<p>임종</p>
+								<div class="date-1 ">
+									<input type="date" name="eod_date" id="eod_date"/>
+								</div>
+								<div class="date-1 ">
+									<input type="time" name="eod_time" id="eod_time"/>
+								</div>
+							</div>
+
+							<div class="row gtr-50 gtr-uniform">
+								<p>입관</p>
+								<div class="date-1 ">
+									<input type="date" name="coffin_date" id="coffin_date"/>
+								</div>
+								<div class="date-1 ">
+									<input type="time" name="coffin_time" id="coffin_time"/>
+								</div>
+							</div>
+
+							<div class="row gtr-50 gtr-uniform">
+								<p>발인</p>
+								<div class="date-1 ">
+									<input type="date" name="dofp_date" id="dofp_date"/>
+								</div>
+								<div class="date-1 ">
+									<input type="time" name="dofp_time" id="dofp_time"/>
+								</div>
+							</div>
+
+							<div class="row gtr-50 gtr-uniform">
+								<p>장지</p>
+								<div class="date-1 ">
+									<input type="text" maxlength='1000' name="buried" id="buried" placeholder="장지를 입력해 주세요"/>
+								</div>
+							</div>
+
+							<div class="row gtr-50 gtr-uniform">
+								<p>안내</p>
+								<div class="noti-1 ">
+									<input type="text" name="word" id="upload_noti" placeholder="예시) 코로나로 인해 조문은 사양합니다."/>
+								</div>
+							</div>
+
+					</div>
+
+					<div class="box">
+						<header>
+							<h3>대표 상주 <div class="add_residency">상주추가</div></h3>
+						</header>
+							<div class="row gtr-50 gtr-uniform"> 
+								<div class="row residency">
+									<div class="residency_item1 residency_item">
+										<div class="name-1 ">
+											<input type="text" name="residentName" id="residentName" placeholder="상주 명" />
+										</div>
+										<br/>
+										<div class="name-2 ">
+											<input type="text" name="residentphone" id="residentphone" placeholder="전화번호" />
+										</div>
+										<br/>
+
+										<div class="name-3">
+											<select required name="relation" id="relation">
+												<option value="" disabled selected>관계</option>
+												<option value="부">부</option>
+												<option value="모">모</option>
+												<option value="배우자">배우자</option>
+												<option value="아들">아들</option>
+												<option value="딸">딸</option>
+												<option value="며느리">며느리</option>
+												<option value="사위">사위</option>
+												<option value="손">손</option>
+												<option value="손자">손자</option>
+												<option value="손녀">손녀</option>
+												<option value="외손">외손</option>
+												<option value="외손자">외손자</option>
+												<option value="외손녀">외손녀</option>
+												<option value="손부">손부</option>
+												<option value="손서">손서</option>
+												<option value="외손부">외손부</option>
+												<option value="외손서">외손서</option>
+												<option value="상주">상주</option>
+												<option value="조카">조카</option>
+												<option value="형제">형제</option>
+												<option value="자매">자매</option>
+												<option value="형">형</option>
+												<option value="동생">동생</option>
+												<option value="형수">형수</option>
+												<option value="제수">제수</option>
+												<option value="처남">처남</option>
+												<option value="매제">매제</option>
+												<option value="매형">매형</option>
+												<option value="누나">누나</option>
+												<option value="언니">언니</option>
+												<option value="남매">남매</option>
+											</select>
+										</div>
+										<br/>
+									</div>
+								</div>
+							</div>
+							<div class="col-12">
+								<ul class="actions special">
+									<li><input type="submit" value="부고 등록"/></li>
+								</ul>
+							</div>
+
+					</div>
+
+				</section>
+			</form>
+			
+				<footer id="footer">
+					<div class="inner">
+						<div module="Layout_footer">
+							<div class="info">
+								<div class="info__address">
+									<span>법인명(상호) : 청란플라워 </span> <br/>
+									<span>대표자(성명) : 박인호</span> <br/>
+									<span>사업자 등록번호 안내 : 448-92-01531</span><br/>
+									<span>통신판매업 신고: 제 2022-전남 구례-9호</span><br/>
+									<span class="{$cpo_email|display}">개인정보보호책임자 : 청란플라워</a></span><br/>
+								</div>
+							</div>
+							<ul class="util">
+								<ul class="copyright">
+									<li><a href="index.html">홈</a></li>
+									<li><a href="company.html">회사소개</a></li>
+									<li><a href="privacy.html">개인정보취급방침</a></li>
+									<li><a href="guide.html">이용안내</a></li>
+								</ul>
+							</ul>
+						</div>
+					</div>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/upload/upload.js"></script>
+
+	</body>
+ </html>
+

@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<html lang="kr">
+	<head>
+		<title>회원가입</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/login/signup.css" />
+
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+			<!-- Header -->
+			<header id="header" class="alts">
+				<h1><a href="index.html">애도</a> 회원가입</h1>
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">홈</a></li>
+							<li>
+								<a href="#" class="icon solid fa-angle-down">메뉴</a>
+								<ul>
+									<li><a href="list.html">부고목록</a></li>
+									<li><a href="upload.html">부고작성</a></li>
+									<li><a href="order.html">화환주문</a></1li>
+									<li><a href="notice.html">공지사항</a></li>
+
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</header>
+				
+				<section id="main" class="container medium">
+				<header>
+					<h3>회원가입</h3>
+					<p>회원가입을 위해 정보를 입력해주세요</p>
+				</header>
+				<div class="box">
+					<form method="post" action="#">
+						<div class="input_box">
+                            <div>이름</div>
+                            <input type="text" name="name" class="name" id="name" placeholder="이름을 입력해 주세요" />
+                            <br/>
+                            
+                            <div>생년월일</div>
+                            <input type="date" name="date" class="date" id="date"/>
+                            <br/>
+                            
+                            <div>전화번호</div>
+                            <input type="text" name="phone" class="phone" id="phone" readonly placeholder="전화번호를 입력해 주세요" />
+                            <br/>
+                        </div>
+                        
+                        <div class="register_btn" onclick="register()">회원가입</div>
+
+						<div class="col-6 col-12-narrower">
+							<input type="checkbox" id="terms" name="terms">
+							<label for="terms">전체동의</label>
+						</div>
+                        <div class="terms_box">
+                            <div class="terms_bar">
+								"애도"개인정보 고유식별 번호 등의 이용약관
+                                <img class="terms_bar_img" src="./images/arrow_top_up_icon.png">
+                            </div>
+                            <div class="term_text">
+								<div class="text">
+                                    ‘애도' 부고 작성 및 화환 구매(이하 동칭하여‘서비스'라 함) 을 제공하기 위하여 아래와 같이 고유식별 정보를 수집, 이용하고 있습니다.
+                                    <br/><br/>1. 개인정보를 제공받는 자 : 통신사(에스케이텔레콤㈜, ㈜케이티, LG유플러스 등), PG사(㈜다날, ㈜케이에스넷)
+                                    <br/><br/>2. 개인정보를 제공받는 자의 개인정보 이용 목적 : 연계정보(CI)/중복가입확인정보(DI) 생성 및 제공
+                                    <br/><br/>3. 제공하는 개인정보 항목: 주민등록번호, 외국인등록번호, 휴대폰번호
+                                    <br/><br/>4. 개인정보를 제공받는 자의 개인정보 보유 및 이용기간 : 연계정보(CI)/중복가입확인정보(DI) 생성 후 즉시 폐기
+                                    <br/><br/>5.본인은 동의를 거부할 권리가 있으며, 동의하지 않으실 경우 서비스를 이용하실 수 없습니다.
+                                </div>
+                            </div>
+                        </div>
+					</form>
+				</div>
+				</section>
+
+				
+
+				<section id="main">
+
+				</section>
+
+				<footer id="footer">
+					<div class="inner">
+						<div module="Layout_footer">
+							<div class="info">
+								<div class="info__address">
+									<span>법인명(상호) : 청란플라워 </span> <br/>
+									<span>대표자(성명) : 박인호</span> <br/>
+									<span>사업자 등록번호 안내 : 448-92-01531</span><br/>
+									<span>통신판매업 신고: 제 2022-전남 구례-9호</span><br/>
+									<span class="{$cpo_email|display}">개인정보보호책임자 : 청란플라워</a></span><br/>
+								</div>
+							</div>
+							<ul class="util">
+								<ul class="copyright">
+									<li><a href="index.html">홈</a></li>
+									<li><a href="company.html">회사소개</a></li>
+									<li><a href="privacy.html">개인정보취급방침</a></li>
+									<li><a href="guide.html">이용안내</a></li>
+								</ul>
+							</ul>
+						</div>
+					</div>
+				</footer>
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/login/signup.js"></script>
+			<script type="text/javascript" src="assets/js/login/logincheck.js" > </script>
+			<script type="text/javascript" src="assets/js/login/jquery-1.10.1.min.js"> </script>
+			<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	</body>
+</html>
