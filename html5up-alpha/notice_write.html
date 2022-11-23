@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html lang="kr">
+	<head>
+		<title>공지사항</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/notice/notice.css" />
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+			<header id="header" class="alts">
+				<h1><a href="index.html">애도</a> 공지사항&nbsp;&nbsp;&nbsp;&nbsp;<span class="user_info" id="user_info" style="left:5em;"></span></h1>
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">홈</a></li>
+						<li>
+							<a href="#" class="icon solid fa-angle-down">메뉴</a>
+							<ul>
+                                <li><a href=""><div onclick="nav_click('admin_list.html');">부고관리</div></a></li>
+                                <li><a href=""><div onclick="nav_click('admin_order.html');">화환관리</div></a></li>
+                                <li><a href=""><div onclick="nav_click('admin_user.html');">회원관리</div></a></li>
+                                <li><a href=""><div onclick="nav_click('admin_notice.html');"></div>공지사항</a></li>
+							</ul>
+						</li>
+						<li><a href="login.html" class="button" id="login_btn">로그인</a></li>
+						<li><a class="button" id="logout_btn"><div id="logout">로그아웃</div></a></li>
+				</ul>
+				</nav>
+				</header>
+
+			<!-- Main -->
+				<section id="main" class="container medium">
+					<header>
+						<h2>공지 작성</h2>
+					</header>
+					<div class="box">
+                        <div class="add-notification">
+                            <div class="add-new-notification" style="height: 420px;">
+                                <div class="form-group">
+                                    <input type="text" id="notice_title" placeholder="제목">
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="notice_textarea" id="notice_content" rows="11" placeholder="내용" style="width: 100%;"></textarea>
+                                </div>
+                                <div id="notice_submit" class="notice_write_btn submit">완료</div>
+                                <a href="admin_notice.html" class="notice_write_btn back">목록</a>
+                            </div>
+                        </div>
+					</div>
+				</section>
+
+			<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<div module="Layout_footer">
+						<div class="info">
+							<div class="info__address">
+								<span>법인명(상호) : 청란플라워 </span> <br/>
+								<span>대표자(성명) : 박인호</span> <br/>
+								<span>사업자 등록번호 안내 : 448-92-01531</span><br/>
+								<span>통신판매업 신고: 제 2022-전남 구례-9호</span><br/>
+								<span class="{$cpo_email|display}">개인정보보호책임자 : 청란플라워</a></span><br/>
+							</div>
+						</div>
+						<ul class="util">
+							<ul class="copyright">
+								<li><a href="index.html">홈</a></li>
+								<li><a href="company.html">회사소개</a></li>
+								<li><a href="privacy.html">개인정보취급방침</a></li>
+								<li><a href="guide.html">이용안내</a></li>
+							</ul>
+						</ul>
+					</div>
+				</div>
+			</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/admin/admin_main.js"></script>
+    </body>
+</html>

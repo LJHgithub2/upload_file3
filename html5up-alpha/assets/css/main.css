@@ -28,6 +28,7 @@
 		font-size: 100%;
 		font: inherit;
 		vertical-align: baseline;
+		text-decoration: none;
 	}
 
 	article, aside, details, figcaption, figure,
@@ -4476,4 +4477,43 @@
 .box .item{
 	padding:6px 0px;
 	overflow:overlay;
+}
+/*admin 페이지*/
+.write{
+	background-color:#2f354294;
+	color:white;
+	float:right;
+	border-radius:3px;
+	padding:5px 20px;
+	font-size:0.9em;
+}
+.write:hover{
+	background-color:#1e222994;
+}
+.notice_textarea{
+	margin:40px 0px;
+	resize:none;
+}
+.notice_write_btn{
+	padding:5px;
+	border-radius:5px;
+	margin:0 10px 0 0;
+	float:right;
+	width:13%;
+	text-align: center;
+	color:rgb(255, 255, 255);
+	font-size:0.9em;
+}
+.notice_write_btn.back{
+	background-color:rgb(170, 170, 170);
+}
+.notice_write_btn.submit{
+	background-color:rgb(252, 181, 49);
+	cursor:pointer;
+}
+.notice_write_btn.back:hover{
+	background-color:rgb(136, 135, 135);
+}
+.notice_write_btn.submit:hover{
+	background-color:rgb(241, 165, 22);
 }

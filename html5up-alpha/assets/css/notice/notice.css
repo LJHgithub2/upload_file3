@@ -121,3 +121,67 @@ a {
 .paging a.num:hover {
     text-decoration: underline;
 }
+/*admin_notice*/
+.admin.board_list .num {
+    width: 10%;
+    height: 10%;
+}
+
+.admin.board_list .tit {
+    width: 40%;
+}
+
+.admin.board_list_body div.tit {
+    text-align: left;
+}
+
+.admin.board_list_body div.tit a:hover {
+    text-decoration: underline;
+}
+
+.admin.board_list .writer {
+    width: 10%;
+}
+
+.admin.board_list .date {
+    width: 15%;
+}
+
+.admin.board_list .view {
+    width: 10%;
+}
+.admin.board_list .admin_menu{
+    width: 15%;
+}
+.admin .board_list_body .btn_box {
+    width:15%;
+    padding:0 15px;
+}
+.modify_btn{
+    cursor:pointer;
+    font-size:0.9em;
+    border-radius: 5px;
+    width:100%;
+    margin:5px 0;
+    color:rgb(102, 101, 101);
+    font-weight: 100;
+}
+.admin .board_list_body .modified{
+    background-color:rgb(255, 188, 112);
+}
+.admin .board_list_body .modified:hover{
+    background-color:rgb(252, 173, 84);
+    font-weight: bold;
+}
+.admin .board_list_body .item{
+    padding:0;
+    display:flex;
+    align-items:center;
+}
+.admin .board_list_body .delete{
+    background-color:rgb(247, 186, 186);
+}
+.admin .board_list_body .delete:hover{
+    background-color:rgb(252, 161, 161);
+    font-weight: bold;
+}

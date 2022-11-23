@@ -19,10 +19,10 @@
 						<li>
 							<a href="#" class="icon solid fa-angle-down">메뉴</a>
 							<ul>
-								<li><a href=""><div onclick="nav_click('list.html');">부고목록</div></a></li>
-								<li><a href=""><div onclick="nav_click('upload.html');">부고작성</div></a></li>
-								<li><a href=""><div onclick="nav_click('order.html');">화환주문</div></a></li>
-								<li><a href="notice.html">공지사항</a></li>
+                                <li><a href=""><div onclick="nav_click('admin_list.html');">부고관리</div></a></li>
+                                <li><a href=""><div onclick="nav_click('admin_order.html');">화환관리</div></a></li>
+                                <li><a href=""><div onclick="nav_click('admin_user.html');">회원관리</div></a></li>
+                                <li><a href=""><div onclick="nav_click('admin_notice.html');"></div>공지사항</a></li>
 							</ul>
 						</li>
 						<li><a href="login.html" class="button" id="login_btn">로그인</a></li>
@@ -40,23 +40,29 @@
 						<form method="get" action="#">
 							<div class="row gtr-50 gtr-uniform">
 								<div class="board_list_wrap">
-									<div class="board_list">
+									<div class="admin board_list">
 										<div class="board_list_head">
 											<div class="num">번호</div>
 											<div class="tit">제목</div>
 											<div class="writer">글쓴이</div>
 											<div class="date">작성일</div>
 											<div class="view">조회</div>
+											<div class="admin_menu">수정</div>
 										</div>
 										<div class="board_list_body">
 											<div class="item">
-												<div class="num">5</div>
+												<div class="num"></div>
 												<div class="tit"><a href="#">테스트 공지사항</a></div>
 												<div class="writer">관리자</div>
 												<div class="date">2022-01-01</div>
 												<div class="view">0</div>
+												<div class="btn_box">
+													<input type="hidden" val="">
+													<div class="modified modify_btn">수정</div>
+													<div class="delete modify_btn" onclick="post_delete(this);">삭제</div>
+												</div>
 											</div>
-											<div class="item">
+											<!--<div class="item">
 												<div class="num">4</div>
 												<div class="tit"><a href="#">테스트 공지사항</a></div>
 												<div class="writer">관리자</div>
@@ -84,15 +90,19 @@
 												<div class="date">2022-01-01</div>
 												<div class="view">0</div>
 											</div>
-										</div>
+										</div>-->
 									</div>
-									
-									<div class="paging">
-										<a href="#" class="bt first">처음 페이지</a>
-										<a href="#" class="bt prev">이전 페이지</a>
-										<a href="#" class="num on">1</a>
-										<a href="#" class="bt next">다음 페이지</a>
-										<a href="#" class="bt last">마지막 페이지</a>
+									<div class="main_bottom">
+										<div class="paging">
+											<a href="#" class="bt first">처음 페이지</a>
+											<a href="#" class="bt prev">이전 페이지</a>
+											<a href="#" class="num on">1</a>
+											<a href="#" class="bt next">다음 페이지</a>
+											<a href="#" class="bt last">마지막 페이지</a>
+										</div>
+										<a href="notice_write.html" class="write">
+											글쓰기
+										</a>
 									</div>
 								</div>
 						
@@ -134,7 +144,7 @@
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+			<script src="assets/js/admin/admin_main.js"></script>
 			<script src="assets/js/notice/notice.js"></script>
 	</body>
 </html>
