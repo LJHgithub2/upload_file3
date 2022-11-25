@@ -185,3 +185,81 @@ a {
     background-color:rgb(252, 161, 161);
     font-weight: bold;
 }
+.item_sample{
+    display:none;
+}
+.box header{
+    border:1px solid rgb(185, 181, 181);
+    padding:1.5em;
+    border-radius: 8px 8px 0 0;
+}
+.box header .notice_title{
+    font-weight: bold;
+    font-size:1.6em;
+    color:black;
+    margin:10px 0;
+}
+.box header .post_info{
+    display:flex;
+}
+.box header .post_info .notice_writer{
+    color:rgb(58, 57, 57);
+}
+.box header .post_info .notice_writer::after{
+    content:"|";
+    position: relative;
+    bottom: 2px;
+    color: gray;
+    margin: 0 3px;
+}
+.box main{
+    border:1px solid rgb(185, 181, 181);
+    border-top:none;
+    padding:3em;
+    border-radius: 0 0 8px 8px;
+    min-height: 40vh;
+    color:rgb(14, 13, 13);
+    font-size:1em;
+
+}
+.notice_back_btn{
+    border:1px solid rgb(196, 196, 196);
+    background-color: rgb(226, 226, 226);
+    font-weight: bold;
+    margin:10px;
+    padding:2px 20px;
+    border-radius: 10px;;
+    font-size:0.9em;
+    display:inline-flex;
+    flex-direction: column-reverse;
+    cursor:pointer;
+    
+}
+.notice_back_btn:hover{
+    background-color: rgb(221, 220, 220);
+    
+    
+}
+.notice_back_btn a{
+    border:none;
+}
+.notice_back_btn a::before{
+    content:"";
+    background-image:url("https://iconmonstr.com/wp-content/g/gd/makefg.php?i=../releases/preview/7.2.0/png/iconmonstr-arrow-left-alt-filled.png&r=0&g=0&b=0");
+    background-repeat:no-repeat;
+    background-size:20px 25px;
+    position: relative;
+    right:3px;
+    top:1px;
+    width:20px;
+    height:20px;
+    display:inline-block;
+    /*content:url("http://dasima.xyz/wp-content/uploads/2018/10/css-background-image-ex-3.png")*/
+    
+}
+.box footer{
+    display:flex;
+    flex-direction:row-reverse
+
+}
+

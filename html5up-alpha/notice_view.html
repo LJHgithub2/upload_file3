@@ -34,50 +34,23 @@
 			<!-- Main -->
 				<section id="main" class="container medium">
 					<header>
-						<h2>공지사항</h2>
+						<h2>게시글</h2>
 					</header>
 					<div class="box">
-						<form method="get" action="#">
-							<div class="row gtr-50 gtr-uniform">
-								<div class="board_list_wrap">
-									<div class="admin board_list">
-										<div class="board_list_head">
-											<div class="num">번호</div>
-											<div class="tit">제목</div>
-											<div class="writer">글쓴이</div>
-											<div class="date">작성일</div>
-											<div class="view">조회</div>
-											<div class="admin_menu">수정</div>
-										</div>
-										<div class="board_list_body">
-											<div class="item_sample">
-												<div class="num"></div>
-												<div class="tit" onclick="post_view(this);"><a href="#"></a></div>
-												<div class="writer">관리자</div>
-												<div class="date"></div>
-												<div class="view">0</div>
-												<div class="btn_box">
-													<input type="hidden" id="post_id" value="asfas">
-													<div class="modified modify_btn""">수정</div>
-													<div class="delete modify_btn" onclick="post_delete(this);">삭제</div>
-												</div>
-											</div>
-									</div>
-									<div class="main_bottom">
-										<div class="paging">
-											<a href="#" class="bt first">처음 페이지</a>
-											<a href="#" class="bt prev">이전 페이지</a>
-											<a href="#" class="num on">1</a>
-											<a href="#" class="bt next">다음 페이지</a>
-											<a href="#" class="bt last">마지막 페이지</a>
-										</div>
-										<a href="notice_write.html" class="write">
-											글쓰기
-										</a>
-									</div>
-								</div>
-						
-						</form>
+						<header>
+							<div class="notice_title"></div>
+							<div class="post_info">
+								<div class="notice_writer">관리자</div>
+								<div class="notice_created"></div>
+							</div>
+						</header>
+						<main>
+							<div class="notice_contents">
+							</div>
+						</main>
+						<footer>
+							<div class="notice_back_btn"><a href="notice">목록으로</a></div>
+						</footer>
 					</div>
 				</section>
 
@@ -116,6 +89,6 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/admin/admin_main.js"></script>
-			<script src="assets/js/notice/notice.js"></script>
+			<script src="assets/js/notice/notice_view.js"></script>
 	</body>
 </html>

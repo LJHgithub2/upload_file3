@@ -78,7 +78,6 @@
 })(jQuery);
 var login_check=false;
 window.onload = function () {
-	noticeAPI();
 	$("#logout_btn").hide();
 	fetch("https://www.aedo.co.kr/v1/user",{
 		method:"get", 
@@ -94,12 +93,10 @@ window.onload = function () {
 			$("#login_btn").hide();
 			$("#user_info").text(data.user.phone+"님 환영합니다!");
 			login_check=true;
-            console.log(login_check)
 		}
 		else{
 			login_check=true;
             //location.href="index.html";
-            console.log(login_check)
 		}
 	});
 }
